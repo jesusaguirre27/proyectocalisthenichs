@@ -23,7 +23,7 @@ header {
     font-size: 30px;
 }
 
-/*·title {
+/*title {
     display: flex;
     justify-content: left;
     padding: 100%;
@@ -67,45 +67,14 @@ header {
 }
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 320px) {
 .navigation {
-    justify-content: center;
-    }
-}
-
-@media all and (max-width: 600px) {
-.navigation {
-    flex-direction: column;
-    align-items: stretch;
-    }
-
-.navigation a {
-    text-align: center;
-    padding: 10px;
-    }
-
-.navigation li:last-of-type a {
-    border-bottom: none;
-    }
-
-.navigation li {
-    margin-top: 22px;
-    }
-
-.logo {
-    margin-right: 0;
-    margin-bottom: 10px;
-    }
-}
-
-@media all and (max-width: 288px) {
-.navigation {
-    flex-direction: column;
+    flex-direction:column;
     align-items:flex-start;
     }
 
 .navigation a {
-    text-align: center;
+    text-align:left;
     padding: 10px;
     }
 
@@ -120,6 +89,35 @@ header {
 .logo {
     margin-right: 0;
     margin-bottom: 10px;
+    }
+
+h1 {
+    text-align:left;
+    margin-top: 5px;
+}
+
+}
+
+@media all and (min-widyh: 321px) and (max-width: 600px) {
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (min-width: 601px) and (max-width: 800px) {
+.navigation {
+    justify-content: center;
     }
 }
 
@@ -130,7 +128,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
+    padding: 10px;
 }
 
 nav ul h1 {
@@ -371,6 +369,10 @@ footer {
 /* Estilos para la sección "Sobre Nosotros" */
 .textea {
     padding: 20px;
+}
+
+.imagen-slide {
+    max-width: 80%;
 }
 
 #about {
