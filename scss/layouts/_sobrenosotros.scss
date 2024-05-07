@@ -1,0 +1,40 @@
+/* Estilos para la sección "Sobre Nosotros" */
+
+.textea {
+  padding: 20px;
+}
+
+.imagen-slide {
+  max-width: 80%;
+}
+
+#about {
+  display: flex;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  h2 {
+    color: white;
+    font-size: 24px;
+  }
+
+  h3 {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+
+    &:hover strong {
+      color: #1565c0;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+/*pie de pagina*/
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.mapa {
+  width: 100%;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.redes-sociales {
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.mapa h3 {
+  color: white;
+}
+
+.redes-sociales {
+  h3 {
+    color: white;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+    }
+  }
+}

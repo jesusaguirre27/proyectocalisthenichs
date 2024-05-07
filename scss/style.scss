@@ -1,12 +1,9 @@
-//base
-@import 'base/reset';
-@import 'base/vars';
-//components
-@import 'components/footer';
-@import 'components/navbar';
-//layouts
-@import 'layouts/index';
-@import 'layouts/contacto';
-@import 'layouts/productos';
-@import 'layouts/registrate';
-@import 'layouts/sobrenosotros';
+//import
+@import "components/footer";
+@import "components/navbar";
+@import "layouts/contacto";
+@import "layouts/sobrenosotros";
+@import "layouts/registrate";
+@import "layouts/productos";
+@import "layouts/index";
+

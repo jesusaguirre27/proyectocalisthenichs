@@ -1,0 +1,39 @@
+/*galeria de productos*/
+
+.gallery2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  gap: 10px;
+}
+
+.image {
+  width: 100%;
+  height: 200%;
+  border-radius: 0px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.card-title:hover {
+  font-size: 1.5em;
+  color: #1565c0;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-body-secondary {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2em;
+}
