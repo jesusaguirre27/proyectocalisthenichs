@@ -1,7 +1,7 @@
-/* Estilos para la sección "Sobre Nosotros" */
-
+@import "../base/vars";
+//Estilos para la sección "Sobre Nosotros"
 .textea {
-  padding: 20px;
+  padding: $size-medium;
 }
 
 .imagen-slide {
@@ -10,31 +10,31 @@
 
 #about {
   display: flex;
-  background-color: black;
-  border: 2px solid white;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
+  background-color: $color-black;
+  border: 2px solid $color-white;
+  border-radius: $size-small;
+  padding: $size-medium;
+  margin-bottom: $size-medium;
 
   h2 {
-    color: white;
+    color:$color-white;
     font-size: 24px;
   }
 
   h3 {
-    color: white;
-    font-size: 20px;
+    color: $color-white;
+    font-size: $size-medium;
     margin-top: 15px;
   }
 
   p {
-    color: white;
+    color: $color-white;
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 10px;
+    margin-top: $size-small;
 
     &:hover strong {
-      color: #1565c0;
+      color:$color-primary;
     }
   }
 }

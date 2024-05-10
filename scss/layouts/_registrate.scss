@@ -1,12 +1,13 @@
-/*registrate*/
-
+//import
+@import "../base/vars";
+//registrate
 .container {
   max-width: 400px;
-  margin: 30px auto;
+  margin: $size-large auto;
   padding: 20px;
-  background-color: black;
-  border: 2px solid white;
-  box-shadow: 0 0 10px white;
+  background-color:$color-black;
+  border: 2px solid $color-white;
+  box-shadow: 0 0 10px $color-white;
 }
 
 input {
@@ -14,25 +15,25 @@ input {
   &[type="email"],
   &[type="password"] {
     width: 200%;
-    padding: 10px;
+    padding: $size-small;
     margin-bottom: 15px;
-    border: 1px solid white;
+    border: 1px solid $color-white;
     border-radius: 4px;
     box-sizing: border-box;
   }
 
   &[type="submit"] {
-    background-color: black;
-    color: white;
+    background-color: $color-black;
+    color: $color-white;
     border: none;
-    padding: 10px 20px;
+    padding: $size-small $size-medium;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
     width: 100%;
 
     &:hover {
-      background-color: #1565c0;
+      background-color:$color-primary;
     }
   }
 }

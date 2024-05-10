@@ -1,18 +1,20 @@
-/* Color de fondo del cuerpo */
+//import
+@import "../base/vars";
+//Color de fondo del cuerpo
 body {
-  font-family: Gill Sans, sans-serif;
+  font-family: $font-family;
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: white;
+  background-color: $color-black;
+  color: $color-white;
 }
 
-/*encabezado */
+//encabezado
 
 header {
-  background-color: black;
-  padding: 20px;
-  border-bottom: 2px solid black;
+  background-color: $color-black;
+  padding: $size-medium;
+  border-bottom: 2px solid $color-black;
 }
 
 #container {
@@ -20,7 +22,7 @@ header {
 
   h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: $size-small;
   }
 }
 
@@ -46,7 +48,7 @@ title {
   }
 }
 
-/*imagen principal*/
+//imagen principal
 
 #mainImage img {
   display: flex;
@@ -56,51 +58,51 @@ title {
   max-width: 100%;
 }
 
-/*contenido texto pagina principal*/
+//contenido texto pagina principal
 
 #content {
   display: grid;
   justify-self: center;
-  padding: 20px;
+  padding: $size-medium;
 }
 
 .article {
-  background-color: black;
-  padding: 20px;
-  border-radius: 10px;
-  border: 2px solid white;
+  background-color: $color-black;
+  padding: $size-medium;
+  border-radius: $size-small;
+  border: 2px solid $color-white;
   text-align: center;
 }
 
-/*carrusel pagina principal*/
+//carrusel pagina principal
 
 #carrusel {
   width: 100%;
   object-fit: cover;
 }
 
-/* Estilos para la sección de mapa */
+//Estilos para la sección de mapa
 
 #mapa {
-  background-color: black;
-  color: white;
-  padding: 20px;
+  background-color: $color-black;
+  color: $color-white;
+  padding: $size-medium;
   margin: 0 auto;
-  margin-bottom: 20px;
-  max-width: 600px;
-  border-radius: 20px;
+  margin-bottom: $size-medium;
+  max-width: 300px;
+  border-radius: $size-medium;
 }
 
-/* Contenedor principal */
+//Contenedor principal
 
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
+  gap: $size-medium;
+  padding: $size-medium;
 }
 
-/* Estilos para cada sección */
+//Estilos para cada sección
 
 .section {
   max-width: 900px;
@@ -112,23 +114,24 @@ title {
   }
 
   ul {
-    padding-left: 20px;
+    padding-left: $size-medium;
   }
 }
 
 .article {
-  background-image: url(/imagenes/fondotext.jpeg);
+  background-image: url(../imagenes/fondotext.jpeg);
   background-size: cover;
   background-position: center;
-  padding: 20px;
+  padding: $size-medium;
   position: relative;
 }
 
 #boton-registro {
   border-radius: 5px;
-  padding: 10px 7px;
+  padding: $size-small 7px;
   text-decoration: none;
-  color: black;
-  background-color: #333;
+  color: $color-black;
+  background-color: $color-primary;
   margin: 5px;
+
 }

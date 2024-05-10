@@ -1,32 +1,34 @@
-/* Estilos para la sección de contacto */
+//import
+@import "../base/vars";
+//Estilos para la sección de contacto
 #contacto {
-  background-color: black;
-  color: white;
-  padding: 20px;
+  background-color: $color-black;
+  color: $color-white;
+  padding: $size-medium;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: $size-medium;
   max-width: 600px;
 }
 
 .contact-info {
   border: none;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: $size-small;
+  margin-bottom: $size-small;
   justify-content: right;
 }
 
 .contact-form {
-  border: 2px solid white;
-  padding: 20px;
-  box-shadow: 0 0 10px white;
+  border: 2px solid $color-white;
+  padding: $size-medium;
+  box-shadow: 0 0 $size-small $color-white;
 
   input {
     &[type="text"],
     &[type="email"] {
       width: 100%;
-      padding: 10px;
+      padding: $size-small;
       margin-bottom: 15px;
-      border: 1px solid white;
+      border: 1px solid $color-white;
       border-radius: 4px;
       box-sizing: border-box;
     }
@@ -34,19 +36,27 @@
 
   textarea {
     width: 100%;
-    padding: 10px;
+    padding: $size-small;
     margin-bottom: 15px;
-    border: 1px solid white;
+    border: 1px solid $color-white;
     border-radius: 4px;
     box-sizing: border-box;
     height: 100px;
   }
 
   button {
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    border-bottom: white;
+    background-color:$color-black;
+    color: $color-white;
+    border: none;
+    padding: $size-small $size-medium;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+
+
+    &:hover{
+      background-color:$color-primary;
+    }
   }
 }
