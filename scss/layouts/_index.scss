@@ -119,11 +119,11 @@ title {
 }
 
 .article {
-  background-image: url(../imagenes/fondotext.jpeg);
+  background-image: linear-gradient(25deg, #000000a8, #00000094), url(../imagenes/fondotext.jpeg);
   background-size: cover;
   background-position: center;
   padding: $size-medium;
-  position: relative;
+  position: absolute;
 }
 
 #boton-registro {
@@ -133,5 +133,4 @@ title {
   color: $color-black;
   background-color: $color-primary;
   margin: 5px;
-
 }
