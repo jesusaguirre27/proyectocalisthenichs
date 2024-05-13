@@ -68,7 +68,7 @@ footer {
 /*barra de navegacion*/
 @media (max-width: 768px) {
   header {
-    margin-bottom: 150px;
+    margin-bottom: 0px;
   }
   .navigation {
     flex-direction: column;
@@ -76,12 +76,11 @@ footer {
     width: 100%;
   }
   .logo {
-    margin: 30px;
+    margin: 10px;
     height: 80px;
     margin-bottom: 20px;
   }
   nav ul {
-    margin-top: 150px;
     padding-left: 0;
   }
   #about {
@@ -91,11 +90,11 @@ footer {
 }
 nav {
   background: black;
-  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  width: 100%;
 }
 nav ul h1 {
   display: flex;
@@ -104,16 +103,15 @@ nav ul h1 {
 nav a {
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
 }
 
 /*logo de pagina*/
 .logo {
   display: grid;
-  margin-right: 100px;
-  width: 320px;
   justify-self: start;
-  margin-top: 30px;
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
 }
 
 #contacto {
