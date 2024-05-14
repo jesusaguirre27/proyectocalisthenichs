@@ -1,5 +1,6 @@
 //import
 @import "../base/vars";
+@import "../base/mixin";
 //Color de fondo del cuerpo
 body {
   font-family: $font-family;
@@ -69,7 +70,7 @@ title {
 .article {
   background-color: $color-black;
   padding: $size-medium;
-  border-radius: $size-small;
+  @include rounded-border(10px);
   border: 2px solid $color-white;
   text-align: center;
 }
@@ -83,14 +84,12 @@ title {
 
 //Estilos para la sección de mapa
 
-#mapa {
+.mapa {
   background-color: $color-black;
   color: $color-white;
   padding: $size-medium;
   margin: 0 auto;
   margin-bottom: $size-medium;
-  max-width: 300px;
-  border-radius: $size-medium;
 }
 
 //Contenedor principal
@@ -123,7 +122,7 @@ title {
   background-size: cover;
   background-position: center;
   padding: $size-medium;
-  position: absolute;
+  position: relative;
 }
 
 #boton-registro {

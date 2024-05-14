@@ -1,8 +1,9 @@
 //import
 @import "../base/vars";
+@import "../base/mixin";
 //galeria de productos
 .card {
-  border-radius: 15px;
+  @include rounded-border(15px);
   border-color: $color-black;
   background-color: $color-black;
 

@@ -68,19 +68,19 @@ footer {
 /*barra de navegacion*/
 @media (max-width: 768px) {
   header {
-    margin-bottom: 0px;
+    margin-bottom: 150px;
   }
   .navigation {
     flex-direction: column;
     align-items: center;
-    width: 100%;
   }
   .logo {
-    margin: 10px;
+    margin: 30px;
     height: 80px;
     margin-bottom: 20px;
   }
   nav ul {
+    margin-top: 150px;
     padding-left: 0;
   }
   #about {
@@ -90,11 +90,11 @@ footer {
 }
 nav {
   background: black;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  width: 100%;
 }
 nav ul h1 {
   display: flex;
@@ -103,15 +103,16 @@ nav ul h1 {
 nav a {
   color: white;
   text-decoration: none;
+  padding: 10px 20px;
 }
 
 /*logo de pagina*/
 .logo {
   display: grid;
+  margin-right: 100px;
+  width: 320px;
   justify-self: start;
-  margin-top: 10px;
-  width: 100%;
-  height: auto;
+  margin-top: 30px;
 }
 
 #contacto {
@@ -322,14 +323,12 @@ title {
   object-fit: cover;
 }
 
-#mapa {
+.mapa {
   background-color: black;
   color: white;
   padding: 20px;
   margin: 0 auto;
   margin-bottom: 20px;
-  max-width: 300px;
-  border-radius: 20px;
 }
 
 .container {
@@ -352,7 +351,7 @@ title {
 }
 
 .article {
-  background-image: url(../imagenes/fondotext.jpeg);
+  background-image: linear-gradient(25deg, rgba(0, 0, 0, 0.6588235294), rgba(0, 0, 0, 0.5803921569)), url(../imagenes/fondotext.jpeg);
   background-size: cover;
   background-position: center;
   padding: 20px;

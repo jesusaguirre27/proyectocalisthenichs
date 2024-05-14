@@ -1,5 +1,6 @@
 //import
 @import "../base/vars";
+@import "../base/mixin";
 //Estilos para la sección de contacto
 #contacto {
   background-color: $color-black;
@@ -49,7 +50,7 @@
     color: $color-white;
     border: none;
     padding: $size-small $size-medium;
-    border-radius: 4px;
+    @include rounded-border(4px);
     cursor: pointer;
     font-size: 16px;
     width: 100%;
