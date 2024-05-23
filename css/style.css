@@ -103,14 +103,11 @@ nav ul h1 {
 nav a {
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
 }
 
 /*logo de pagina*/
 .logo {
   display: grid;
-  margin-right: 100px;
-  width: 320px;
   justify-self: start;
   margin-top: 30px;
 }
